@@ -226,4 +226,7 @@ class Kernel(object):
         a.block = self.block
         a.kLongName = self.kLongName
 
+        a.rStartTime = self.rStartTime
+        a.rEndTime = self.rEndTime
+
         print(a.__dict__)
