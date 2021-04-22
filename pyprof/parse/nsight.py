@@ -221,6 +221,9 @@ class Nsight(object):
             m = r['text']
 
             #Hack: If its a known gradient checkpointing marker, ignore it.
+            if m is None:
+                continue
+
             if m.find("CheckpointFunctionBackward") >= 0:
                 continue
 
